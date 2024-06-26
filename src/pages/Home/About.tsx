@@ -2,7 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Heading, Text, Flex, Avatar, Button, Box } from "@chakra-ui/react";
 
-import vishnuProfilePic from "../../assets/vishnuprofilepic.jpg";
+import vishnuAmritBioPic from "../../assets/vishnu_amrit_bio_pic.jpg";
+import hareemAhmadBioPic from "../../assets/hareem_bio_pic.jpeg"; 
 
 interface IAboutProps {
   name: string;
@@ -71,7 +72,7 @@ const About = () => {
         <AboutSection
           name={"Vishnu Pydah"}
           title={"Co-Founder"}
-          avatarSrc={vishnuProfilePic}
+          avatarSrc={vishnuAmritBioPic}
         >
           I'm a former Meta employee with several years under my belt as both a
           software developer and a volunteer! I feel that modern social media is
@@ -84,7 +85,7 @@ const About = () => {
           about.{" "}
         </AboutSection>
         <Box h="50px" />
-        <AboutSection name={"Hareem Ahmad"} title={"Co-Founder"} avatarSrc="">
+        <AboutSection name={"Hareem Ahmad"} title={"Co-Founder"} avatarSrc={hareemAhmadBioPic}>
           I come from the Healthcare space and have seen how extremely basic
           support systems can uplift individuals who have lost hope. I seek to
           help make those resources more widely available and to create a
