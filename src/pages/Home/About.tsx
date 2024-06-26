@@ -74,13 +74,14 @@ const About = () => {
           avatarSrc={vishnuProfilePic}
         >
           I'm a former Meta employee with several years under my belt as both a
-          software developer and a volunteer! I felt that the social media space
-          is addictive, unforgiving, and mind-numbing; people need to focus on
-          the things that matter -- their communities, their families, and the
-          people and causes they believe in. After volunteering at local
-          sanctuaries in the Greater Seattle Area, I decided there needed to be
-          a better way for likeminded, caring people to stay in touch with the
-          organizations and social causes they care about.{" "}
+          software developer and a volunteer! I feel that modern social media is
+          addictive, mind-numbing, and enslaves us without us even realizing it;
+          people need to focus on the things that matter -- their communities,
+          their families, and the people and causes they believe in. After
+          volunteering at local sanctuaries in the Greater Seattle Area, I
+          decided there needed to be a better way for likeminded, caring people
+          to stay in touch with the organizations and social causes they care
+          about.{" "}
         </AboutSection>
         <Box h="50px" />
         <AboutSection name={"Hareem Ahmad"} title={"Co-Founder"} avatarSrc="">
