@@ -84,13 +84,10 @@ const About = () => {
         </AboutSection>
         <Box h="50px" />
         <AboutSection name={"Hareem Ahmad"} title={"Co-Founder"} avatarSrc="">
-          I'm the hottest man ranked Forbes top 20 under 20 -- I'm past 20 but
-          those two-fingered bony old cronies still couldn't figure me out. I
-          love Valorant and people, but mostly Valorant. I also like Dark Souls
-          too though, and some say I'm the Hollow Knight himself (I started that
-          rumor by the way). All in all, I really need help paying for my PS5
-          gaming subscription so that's why I'm here today... PLUS volunteering
-          will heal my soul ya know bros.{" "}
+          I come from the Healthcare space and have seen how extremely basic
+          support systems can uplift individuals who have lost hope. I seek to
+          help make those resources more widely available and to create a
+          platform enabling people to be rooted in their communities.{" "}
         </AboutSection>
         <Button
           size="lg"
