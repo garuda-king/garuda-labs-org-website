@@ -21,12 +21,12 @@ const AboutSection: React.FC<IAboutProps> = ({
   return (
     <Flex direction="row" justify="start" align="start" w="100%">
       <Flex direction="column" justify="center" align="start" w="70%">
-        <Heading marginBottom="20px" color="#ed81a1">
+        <Heading marginBottom="20px" color="#ed81a1" fontSize={{base: "1.65em"}}>
           {name}
           {", "}
           {title}
         </Heading>
-        <Text fontWeight="semibold" fontSize={{ base: "0.8em", md: "1.15em" }}>
+        <Text fontSize={{ base: "0.75em", md: "1.1em" }}>
           {children}
         </Text>
       </Flex>
@@ -78,6 +78,17 @@ const About = () => {
         >
           About us
         </Heading>
+        <Box marginBottom="40px" w="80%">
+          <Text fontSize={{ base: "0.9em", md: "1.25em" }}>
+            Garuda Labs is building a solution to accelerate the power and
+            spread of social movements by connecting non-profits, volunteers,
+            activists, and people who love their communities. In a highly
+            virtual social media landscape, we want our platform to initiate
+            more meaningful interactions between people and their local
+            communities, and serve as an outlet for discovering community,
+            passion, and purpose.
+          </Text>
+        </Box>
         <AboutSection
           name={"Vishnu Pydah"}
           title={"Co-Founder"}
