@@ -1,6 +1,6 @@
 import React from "react";
-import { useState } from "react";
-// import { IoMenuOutline, IoClose } from "react-icons/io5";
+import { useState, useRef, useEffect } from "react";
+import { IoMenuOutline, IoClose } from "react-icons/io5";
 import { Box, Flex } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
@@ -8,38 +8,41 @@ import "./nav.css";
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [mobileMode, setMobileMode] = useState(false);
+  const mobileMenu = useRef(null);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
 
-  const toggledOpen = (buttonType: String) => {
-    if (window.innerWidth <= 1150) {
-      if (buttonType === "openButton") {
-        console.log("openButton!");
-        return !showMenu ? { display: "flex" } : { display: "none" };
-      } else if (buttonType === "closeButton") {
-        console.log("closeButton!");
-        return showMenu ? { display: "flex" } : { display: "none" };
-      }
-    }
+  const closeOpenMenu = (e) => {
+    console.log("close menu mousedown!");
 
-    console.log("neither!");
-    return { display: "none" };
+    if (showMenu && !mobileMenu.current?.contains(e.target)) {
+      setShowMenu(false); // hide the menu
+    }
   };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", closeOpenMenu);
+  }, []);
 
   const renderNavLinks = () => {
     return (
       <ul id={"nav-items-list"}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={toggleMenu}>
+            <Box className="clickable-box">HOME</Box>
+          </Link>
         </li>
         <li>
-          <Link to="/about-us">About</Link>
+          <Link to="/about-us" onClick={toggleMenu}>
+            <Box className="clickable-box">ABOUT</Box>
+          </Link>
         </li>
         <li>
-          <Link to="/contact-us">Contact Us</Link>
+          <Link to="/contact-us" onClick={toggleMenu}>
+            <Box className="clickable-box">CONTACT US</Box>
+          </Link>
         </li>
       </ul>
     );
@@ -60,25 +63,20 @@ const Nav = () => {
         <Box
           id="nav-items"
           className={showMenu ? "expanded_nav_bar" : "hidden_nav_bar"}
+          ref={mobileMenu}
         >
           {renderNavLinks()}
-          {/* <Box
+          <Box
             className="nav-mobile-menu-closer"
             id="nav-close"
-            style={toggledOpen("closeButton")}
             onClick={toggleMenu}
           >
             <IoClose />
-          </Box> */}
+          </Box>
         </Box>
-        {/* <Box
-          className="nav-hamburger"
-          id="nav-toggle"
-          style={toggledOpen("openButton")}
-          onClick={toggleMenu}
-        >
+        <Box className="nav-hamburger" id="nav-toggle" onClick={toggleMenu}>
           <IoMenuOutline />
-        </Box> */}
+        </Box>
       </Box>
     </nav>
   );

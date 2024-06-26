@@ -7,8 +7,10 @@ const ContactUs = () => {
 
   return (
     <Flex
-      w="100vw"
-      h="100vh"
+      w="100%"
+      h="100%"
+      minW="100vw"
+      minH="100vh"
       bg="whitesmoke"
       direction="column"
       justify="center"
@@ -39,7 +41,10 @@ const ContactUs = () => {
           color="grey"
           w="100%"
         >
-          shoot us an email at <Text as="span" color="black"><a href= "mailto: info@garuda-labs.org"> info@garuda-labs.org</a></Text>
+          please send us an email at{" "}
+          <Text as="span" color="black">
+            <a href="mailto: info@garuda-labs.org"> info@garuda-labs.org</a> 
+          </Text>
         </Text>
         <Button
           size="lg"

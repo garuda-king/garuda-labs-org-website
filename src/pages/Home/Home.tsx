@@ -18,19 +18,20 @@ const Home = () => {
       opacity: 0,
     },
     below: {
-      top: "-5px"
+      top: "-5px",
     },
     regular: {
-      top: "0px"
-    }
+      top: "0px",
+    },
   };
 
   const MotionBox = motion<Omit<BoxProps, "transition">>(Box);
 
   return (
     <Flex
-      w="100vw"
-      h="100vh"
+      h="100%"
+      minW="100vw"
+      minH="100vh"
       bg="tomato"
       direction="column"
       justify="center"
@@ -41,14 +42,14 @@ const Home = () => {
         direction="column"
         justify="center"
         align="start"
-        margin="80px 80px 80px 80px"
+        margin="90px 50px 60px 80px"
       >
         <MotionBox
           as={motion.span}
           alignItems="center"
           justifyContent="center"
           fontWeight="extrabold"
-          fontSize="3em"
+          fontSize={{ base: "2.25em", md: "3em" }}
           marginBottom="10px"
           color="white"
           initial="hidden"
@@ -63,11 +64,11 @@ const Home = () => {
           alignItems="center"
           justifyContent="center"
           fontWeight="bold"
-          fontSize="2.15em"
+          fontSize={{ base: "1.3em", md: "2.15em" }}
           w="80%"
           initial="below"
           animate="regular"
-          transition={{ staggerChildren: 0.05}}
+          transition={{ staggerChildren: 0.05 }}
         >
           {missionStatement.split(" ").map((word) => {
             return <motion.span variants={variants}>{word} </motion.span>;

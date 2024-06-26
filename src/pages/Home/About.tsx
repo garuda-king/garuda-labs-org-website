@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Heading, Text, Flex, Avatar, Button, Box } from "@chakra-ui/react";
 
 import vishnuAmritBioPic from "../../assets/vishnu_amrit_bio_pic.jpg";
-import hareemAhmadBioPic from "../../assets/hareem_bio_pic.jpeg"; 
+import hareemAhmadBioPic from "../../assets/hareem_bio_pic.jpeg";
 
 interface IAboutProps {
   name: string;
@@ -26,11 +26,19 @@ const AboutSection: React.FC<IAboutProps> = ({
           {", "}
           {title}
         </Heading>
-        <Text fontWeight="semibold">{children}</Text>
+        <Text fontWeight="semibold" fontSize={{ base: "0.8em", md: "1.15em" }}>
+          {children}
+        </Text>
       </Flex>
       <Box w="50px" />
       <Flex flexGrow="1" h="100%" justify="start" align="center">
-        <Avatar size="2xl" border="2px solid red" name={name} src={avatarSrc} />
+        <Avatar
+          size="2xl"
+          border="2px solid red"
+          name={name}
+          src={avatarSrc}
+          style={{ zIndex: 1 }}
+        />
       </Flex>
     </Flex>
   );
@@ -43,17 +51,18 @@ const About = () => {
     <Flex
       w="100%"
       h="100%"
-      minHeight="100vh"
+      minW="100vw"
+      minH="100vh"
       bg="white"
       direction="column"
-      justify="start"
+      justify="center"
       align="center"
       color="#ed81a1"
     >
-      <Box maxH="15%" minH="150px" />
       <Flex
         direction="column"
         w="80%"
+        maxW="1980px"
         justify="center"
         align="start"
         margin="80px 80px 80px 80px"
@@ -76,16 +85,20 @@ const About = () => {
         >
           I'm a former Meta employee with several years under my belt as both a
           software developer and a volunteer. I feel that modern social media is
-          addictive, mind-numbing, and ultimately damages our lives and mental health;
-          people need to focus on the things that matter -- their communities,
-          their families, and the people and causes they believe in. After
-          volunteering at local sanctuaries in the Greater Seattle Area, I
-          decided there needed to be a better way for likeminded, caring people
-          to stay in touch with the organizations and social causes they care
-          about.{" "}
+          addictive, mind-numbing, and ultimately damages our lives and mental
+          health; people need to focus on the things that matter -- their
+          communities, their families, and the people and causes they believe
+          in. After volunteering at local sanctuaries in the Greater Seattle
+          Area, I decided there needed to be a better way for likeminded, caring
+          people to stay in touch with the organizations and social causes they
+          care about.{" "}
         </AboutSection>
         <Box h="50px" />
-        <AboutSection name={"Hareem Ahmad"} title={"Co-Founder"} avatarSrc={hareemAhmadBioPic}>
+        <AboutSection
+          name={"Hareem Ahmad"}
+          title={"Co-Founder"}
+          avatarSrc={hareemAhmadBioPic}
+        >
           I come from the Healthcare space and have seen how extremely basic
           support systems can uplift individuals who have lost hope. I seek to
           help make those resources more widely available and to create a
@@ -95,7 +108,7 @@ const About = () => {
           size="lg"
           variant="outline"
           marginLeft="-5px"
-          marginTop="150px"
+          marginTop="80px"
           color="#e75480"
           fontWeight="extrabold"
           borderColor="#e75480"
