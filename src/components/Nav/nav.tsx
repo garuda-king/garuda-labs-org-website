@@ -15,9 +15,9 @@ const Nav = () => {
   };
 
   const closeOpenMenu = (e) => {
-    console.log("close menu mousedown!");
-
     if (showMenu && !mobileMenu.current?.contains(e.target)) {
+      // weirdly stops working if I remove this line sometimes
+      console.log("now false!");
       setShowMenu(false); // hide the menu
     }
   };
