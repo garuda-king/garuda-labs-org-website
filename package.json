@@ -1,7 +1,6 @@
 {
   "name": "garuda-labs-main-website",
   "private": true,
-  "homepage": "/garuda-labs-org-website/#",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
