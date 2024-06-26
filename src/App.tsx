@@ -11,7 +11,7 @@ import {
   ChakraProvider,
 } from "@chakra-ui/react";
 
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import "./App.css";
 import WebsiteInProgress from "./pages/Home/WebsiteInProgress.tsx";
 
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <ChakraProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="App">
           <header className="App-header">
             <Nav />
@@ -32,7 +32,7 @@ function App() {
             </Routes>
           </header>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </ChakraProvider>
   );
 }
