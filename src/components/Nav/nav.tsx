@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { IoMenuOutline, IoClose } from "react-icons/io5";
+// import { IoMenuOutline, IoClose } from "react-icons/io5";
 import { Box, Flex } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
