@@ -25,7 +25,7 @@ const ContactUs = () => {
           as="h1"
           alignItems="center"
           justifyContent="center"
-          fontWeight="extrabold"
+          fontWeight="semibold"
           fontSize="3em"
           marginBottom="10px"
           color="#484848"
@@ -35,12 +35,11 @@ const ContactUs = () => {
         <Text
           alignItems="center"
           justifyContent="center"
-          fontWeight="bold"
           fontSize="2.25em"
           color="grey"
           w="100%"
         >
-          shoot us an email at <Text as="span" color="black">vishnuap@garudafly.org</Text>
+          shoot us an email at <Text as="span" color="black"><a href= "mailto: info@garuda-labs.org"> info@garuda-labs.org</a></Text>
         </Text>
         <Button
           size="lg"

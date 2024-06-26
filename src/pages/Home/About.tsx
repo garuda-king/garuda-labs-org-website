@@ -50,7 +50,7 @@ const About = () => {
       align="center"
       color="#ed81a1"
     >
-      <Box maxH="20%" minH="200px" />
+      <Box maxH="15%" minH="150px" />
       <Flex
         direction="column"
         w="80%"
@@ -75,8 +75,8 @@ const About = () => {
           avatarSrc={vishnuAmritBioPic}
         >
           I'm a former Meta employee with several years under my belt as both a
-          software developer and a volunteer! I feel that modern social media is
-          addictive, mind-numbing, and enslaves us without us even realizing it;
+          software developer and a volunteer. I feel that modern social media is
+          addictive, mind-numbing, and ultimately damages our lives and mental health;
           people need to focus on the things that matter -- their communities,
           their families, and the people and causes they believe in. After
           volunteering at local sanctuaries in the Greater Seattle Area, I
