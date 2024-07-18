@@ -1,6 +1,6 @@
 import React from "react";
 import buildingGIF from "../../assets/giphy.gif";
-import { Flex, Heading, Box, Image, Button } from "@chakra-ui/react";
+import { Flex, Heading, Image, Button } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const WebsiteInProgress = () => {

@@ -40,6 +40,11 @@ const Nav = () => {
           </Link>
         </li>
         <li>
+          <Link to="/faqs" onClick={toggleMenu}>
+            <Box className="clickable-box">FAQs</Box>
+          </Link>
+        </li>
+        <li>
           <Link to="/contact-us" onClick={toggleMenu}>
             <Box className="clickable-box">CONTACT US</Box>
           </Link>

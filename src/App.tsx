@@ -2,6 +2,7 @@ import { useState } from "react";
 import Home from "./pages/Home/Home.tsx";
 import About from "./pages/Home/About.tsx";
 import ContactUs from "./pages/Home/ContactUs.tsx";
+import Faqs from "./pages/Home/Faqs.tsx";
 import Nav from "./components/Nav/nav.tsx";
 
 import {
@@ -28,6 +29,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about-us" element={<About />} />
               <Route path="/contact-us" element={<ContactUs />} />
+              <Route path="/faqs" element={<Faqs/>} />
               <Route path="/inprogress" element={<WebsiteInProgress />} />
             </Routes>
           </header>

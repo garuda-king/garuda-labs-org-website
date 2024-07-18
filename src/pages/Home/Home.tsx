@@ -1,5 +1,6 @@
-import { Text, Flex, Heading, Button, Box, BoxProps } from "@chakra-ui/react";
+import { Text, Flex, Image, Button, Box, BoxProps } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import Carousel from "../../components/Carousel/carousel.tsx";
 
 import { useNavigate } from "react-router-dom";
 
@@ -34,10 +35,17 @@ const Home = () => {
       minH="100vh"
       bg="tomato"
       direction="column"
-      justify="center"
+      justify="flex-end"
       align="center"
       color="pink"
     >
+      <Box h="100" />
+      <Flex
+      direction="column"
+      h="100%"
+      grow="1"
+      justifyContent="center"
+      >
       <Flex
         direction="column"
         justify="center"
@@ -85,6 +93,16 @@ const Home = () => {
         >
           ABOUT US{" "}
         </Button>
+      </Flex>
+      </Flex>
+      <Flex h="20vh" w="100%" direction="column" justify="center" marginTop="35px">
+        <Flex w="100%" direction="row" justify="center">
+          <Text fontWeight="extrabold">Recent Donations</Text>
+        </Flex>
+        <Box h="20px" />
+        <Flex w="100%" direction="row" justify="center" align="center" marginBottom="30px">
+          <Carousel />
+        </Flex>
       </Flex>
     </Flex>
   );
