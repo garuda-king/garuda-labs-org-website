@@ -111,6 +111,12 @@ const Faqs = () => {
                 with your community, manage your local volunteers, find and vet
                 talent, post your activity, and fundraise
               </ListItem>
+              <ListItem>
+                <ListIcon as={MdCheckBox} />
+                We're focused on a modern user experience for people because we
+                want younger people to be excited about you -- watch out Tiktok
+                & Instagram!
+              </ListItem>
             </List>
           </Text>
           <Box h="20px" />
@@ -145,6 +151,11 @@ const Faqs = () => {
                 <ListIcon as={MdBrowserNotSupported} />
                 Other applications and websites don’t surface your posts and
                 content regularly in an activity feed directly
+              </ListItem>
+              <ListItem>
+                <ListIcon as={MdBrowserNotSupported} />
+                Volunteer databases are not modernized and interesting to
+                younger folks in Gen Z and Gen Alpha
               </ListItem>
             </List>
           </Text>
