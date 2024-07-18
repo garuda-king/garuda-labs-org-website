@@ -72,10 +72,10 @@ const Faqs = () => {
           FAQs
         </Heading>
         <Box marginBottom="40px" w="80%">
-          <Text fontSize={{ base: "0.9em", md: "1.5em" }}>
+          <Text fontSize={{ base: "1em", md: "1.5em" }}>
             Q: Why should we use your platform?
           </Text>
-          <Text fontSize={{ base: "0.9em", md: "1em" }}>
+          <Text fontSize={{ base: "0.8em", md: "1em" }}>
             A: We provide a multiplatform (Android, iOS, website, desktop)
             application with a built-in donate button for your organization. We
             also:
@@ -114,7 +114,7 @@ const Faqs = () => {
             </List>
           </Text>
           <Box h="20px" />
-          <Text fontSize={{ base: "0.9em", md: "1.5em" }}>
+          <Text fontSize={{ base: "1em", md: "1.5em" }}>
             Q: What are the problems with existing solutions for non-profits?
           </Text>
           <Text fontSize={{ base: "0.8em", md: "1em" }}>
@@ -150,7 +150,7 @@ const Faqs = () => {
           </Text>
         </Box>
         <Box>
-          <Text fontSize={{ base: "0.9em", md: "1.5em" }}>
+          <Text fontSize={{ base: "1em", md: "1.5em" }}>
             Q: What are upcoming features that would get us excited to onboard?
           </Text>
           <Text fontSize={{ base: "0.8em", md: "1em" }}>
