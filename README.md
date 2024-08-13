@@ -6,6 +6,8 @@ React web application for the Garuda webpage
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Force pushing to master.
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
